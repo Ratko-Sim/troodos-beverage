@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  background-color: rgb(23, 23, 23);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 400px;
+  background-color: rgb(30, 30, 33);
+  padding-top: 1rem;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 80%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+button {
+  width: 85%;
+  height: 2.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  background-color: rgb(42, 43, 46);
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(42, 43, 46);
+}
+
+button > a {
+  text-decoration: none;
+  color: #ededed;
+}
+
+.menu {
+  font-size: 0.9rem;
+}
+
+.menu:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.instagram {
+  background: #e94057; /* fallback for old browsers */
+}
+
+.google {
+  background-color: #bf0707;
+}
+
+.tripadvisor {
+  background-color: #00af87;
+}
+
+.separate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.separate > div > img {
+  width: 2rem;
+}
+
+.separate > div::after,
+.separate > div::before {
+  display: inline-block;
+  content: '';
+  border-top: 0.05rem solid rgba(255, 255, 255, 0.18);
+  width: 7rem;
+  transform: translateY(-0.5rem);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 0.9rem;
+  margin-top: 2rem;
+  background-color: rgb(42, 43, 46);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+footer > a {
+  text-decoration: none;
+  color: #ededed;
+}
