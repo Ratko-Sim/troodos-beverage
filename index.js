@@ -52,19 +52,19 @@ function setTheme(themeName) {
 }
 
 function toggleTheme() {
-  if (localStorage.getItem('theme') === 'theme-dark') {
-    setTheme('theme-light');
-  } else {
+  if (localStorage.getItem('theme') === 'theme-light') {
     setTheme('theme-dark');
+  } else {
+    setTheme('theme-light');
   }
 }
 
 (function () {
-  if (localStorage.getItem('theme') === 'theme-dark') {
-    setTheme('theme-dark');
-    document.getElementById('slider').checked = false;
-  } else {
+  if (localStorage.getItem('theme') === 'theme-light') {
     setTheme('theme-light');
     document.getElementById('slider').checked = true;
+  } else {
+    setTheme('theme-dark');
+    document.getElementById('slider').checked = false;
   }
 })();
