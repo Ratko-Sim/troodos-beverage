@@ -16,17 +16,27 @@
 <body>
   <div class="wrapper">
     <header>
-      <img src="/images/troodoslogo.png" alt="troodos logo" />
+      <img class="hero" src="/images/troodoslogo.png" alt="troodos logo" />
+      <div id="language-switch">
+        <label id="switch" class="switch">
+          <input type="checkbox" onchange="toggleTheme()" id="slider">
+          <span class="slider round"></span>
+        </label>
+        <a href="#" language="english" class="active language-link"><img src="/images/united-kingdom.png" alt="">EN</a>
+        <a href="#" language="greek" class="  language-link"><img src="/images/greece.png" alt="">ΕΛ</a>
+      </div>
     </header>
+
     <main>
       <button>
-        <a class="menu" href="/data/bar_menu.pdf">
-          <img class="icons" src="/images/icons8-drink-64.png" alt="" /> bar
+        <img class="icons" src="/images/icons8-drink-64.png" alt="" />
+        <a class="menu menuBar" href="/data/bar_menu.pdf">
+          bar
           menu</a>
       </button>
       <button>
-        <a class="menu" href="/data/restaurant_menu.pdf">
-          <img class="icons" src="/images/icons8-restaurant-48.png" alt="" />
+        <img class="icons" src="/images/icons8-restaurant-48.png" alt="" />
+        <a class="menu menuRestaurant" href="/data/restaurant_menu.pdf">
           restaurant menu</a>
       </button>
       <div class="separate">
@@ -35,35 +45,36 @@
         </div>
       </div>
       <button>
+        <img class="icons" src="/images/icons8-facebook.svg" alt="" />
         <a class="facebook" href="https://www.facebook.com/troodoshotel" target="_blank">
-          <img class="icons" src="/images/icons8-facebook.svg" alt="" /> visit
+          follow
           us on facebook</a>
       </button>
       <button>
+        <img class="icons" src="/images/icons8-instagram.svg" alt="" />
         <a class="instagram" href="https://www.instagram.com/troodoshotel" target="_blank">
-          <img class="icons" src="/images/icons8-instagram.svg" alt="" />
-          visit us on instagram</a>
+          follow us on instagram</a>
       </button>
       <button>
+        <img class="icons" src="/images/icons8-google.svg" alt="" />
         <a class="google"
           href="https://www.google.com.cy/travel/entity/key/CgoI_MOW3sO18vJEEAE/writereview?hl=en&gl=cy&un=1&gsas=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&sa=X&ts=CAESABogCgIaABIaEhQKBwjlDxAMGA8SBwjlDxAMGBAYATICEAAqCwoHKAE6A0VVUhoA&rp=OAE&pli=1&rs=0&ved=0CAAQ5JsGahcKEwjYuezBscr0AhUAAAAAHQAAAAAQAw"
-          target="_blank">
-          <img class="icons" src="/images/icons8-google.svg" alt="" /> leave a
-          review on google</a>
+          target="_blank">leave a review on google</a>
+
       </button>
       <button>
+        <img class="icons" src="/images/icons8-tripadvisor.svg" alt="" />
         <a class="tripadvisor"
           href="https://www.tripadvisor.com/UserReviewEdit-g3870266-d2195082-Troodos_Hotel-Troodos_Limassol.html"
           target="_blank">
-          <img class="icons" src="/images/icons8-tripadvisor.svg" alt="" />
           leave a review on tripadvisor</a>
       </button>
     </main>
-
     <footer>
       <a href="https://www.troodoshotel.com" target="_blank">www.troodoshotel.com</a>
     </footer>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
