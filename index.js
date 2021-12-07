@@ -1,7 +1,7 @@
 const data = {
   "english":
   {
-    "menuBar": "cafe & bar menu",
+    "menuBar": "cafe-bar menu",
     "menuRestaurant": "restaurant menu",
     "menuWine": "wine menu",
     "facebook": "follow us on facebook",
@@ -11,7 +11,7 @@ const data = {
   },
   "greek":
   {
-    "menuBar": "ΜΕΝΟΥ ΚΑΦΕ & ΜΠΑΡ",
+    "menuBar": "ΜΕΝΟΥ ΚΑΦΕ-ΜΠΑΡ",
     "menuRestaurant": "μενου εστιατοριου",
     "menuWine": "ΜΕΝΟΥ ΚΡΑΣΙΩΝ",
     "facebook": "ακολουθηστε μας στο facebook",
