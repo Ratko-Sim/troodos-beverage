@@ -6,18 +6,18 @@
   padding: 0;
 }
 
-.theme-dark {
-  --color-primary: rgb(20, 20, 20);
-  --color-secondary: rgb(30, 30, 30);
-  --color-accent: rgb(45, 45, 45);
-  --font-color: #ffffffc9;
-}
-
 .theme-light {
   --color-primary: rgb(210, 210, 210);
   --color-secondary: rgb(240, 240, 240);
   --color-accent: rgb(255, 255, 255);
   --font-color: #070707d2;
+}
+
+.theme-dark {
+  --color-primary: rgb(20, 20, 20);
+  --color-secondary: rgb(30, 30, 30);
+  --color-accent: rgb(45, 45, 45);
+  --font-color: #ffffffc9;
 }
 
 body {
@@ -34,7 +34,6 @@ body {
 .wrapper {
   margin: 5%;
   border-radius: 0.4rem;
-  overflow: hidden;
   width: 90%;
   max-width: 48rem;
   background-color: var(--color-secondary);
