@@ -7,14 +7,14 @@
 }
 
 .theme-dark {
-  --color-primary: rgb(23, 23, 23);
-  --color-secondary: rgb(30, 30, 33);
-  --color-accent: rgb(42, 43, 46);
+  --color-primary: rgb(20, 20, 20);
+  --color-secondary: rgb(30, 30, 30);
+  --color-accent: rgb(45, 45, 45);
   --font-color: #ffffffc9;
 }
 
 .theme-light {
-  --color-primary: rgb(202, 207, 213);
+  --color-primary: rgb(210, 210, 210);
   --color-secondary: rgb(240, 240, 240);
   --color-accent: rgb(255, 255, 255);
   --font-color: #070707d2;
@@ -66,7 +66,7 @@ header {
 }
 
 #language-switch img {
-  margin: 0 0.2rem;
+  margin: 0 0.25rem 0 0;
 }
 
 .language-link {
@@ -74,11 +74,11 @@ header {
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: 0.25rem;
+  padding: 0.35rem 0.35rem 0.3rem;
   width: 3.3rem;
   margin-right: 1rem;
   border-radius: 0.4rem;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   background-color: var(--color-accent);
@@ -86,7 +86,7 @@ header {
 }
 
 .language-link img {
-  width: 20px;
+  width: 18px;
 }
 
 .language-link.active {
@@ -174,7 +174,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .button {
@@ -184,8 +184,8 @@ main {
   align-items: center;
   border-radius: 0.4rem;
   margin: 0.5rem 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px,
+    rgba(0, 0, 0, 0.15) 0px 1px 3px 1px;
   cursor: pointer;
   background-color: var(--color-accent);
   height: 2.7rem;
@@ -195,14 +195,31 @@ main {
   font-size: 0.65rem;
   letter-spacing: 0.04rem;
   font-weight: 500;
+  position: relative;
 }
 
 .menu {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+}
+
+.time {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.6rem;
+  font-size: 0.55rem;
+  width: auto !important;
+  padding: 0 !important;
+  text-transform: lowercase;
+}
+
+@media (max-width: 324px) {
+  .time {
+    display: none;
+  }
 }
 
 .button:active {
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: transparent;
 }
 
 .button > figure {
@@ -218,10 +235,6 @@ main {
   text-align: center;
   transform: translateX(-3%);
   padding: 0 0.9rem;
-}
-
-.icons {
-  width: 60%;
 }
 
 .separate {
