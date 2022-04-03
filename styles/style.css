@@ -14,9 +14,9 @@
 }
 
 .theme-dark {
-  --color-primary: #121212;
-  --color-secondary: rgb(29, 30, 33);
-  --color-accent: rgb(43, 43, 46);
+  --color-primary: #000000;
+  --color-secondary: #101010;
+  --color-accent: #202020;
   --font-color: #ffffffc9;
 }
 
@@ -218,7 +218,7 @@ main {
 }
 
 .button:active {
-  background-color: rgb(53, 56, 59);
+  background-color: #303030;
 }
 
 .button > figure {
