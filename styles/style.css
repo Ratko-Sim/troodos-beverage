@@ -7,16 +7,18 @@
 }
 
 .theme-light {
-  --color-primary: rgb(210, 210, 210);
+  --color-primary: rgb(240, 240, 240);
   --color-secondary: rgb(240, 240, 240);
   --color-accent: rgb(255, 255, 255);
+  --color-accent2: rgb(245, 245, 245);
   --font-color: #070707d2;
 }
 
 .theme-dark {
-  --color-primary: #000000;
-  --color-secondary: #101010;
-  --color-accent: #202020;
+  --color-primary: rgb(19, 19, 19);
+  --color-secondary: rgb(19, 19, 19);
+  --color-accent: rgb(29, 29, 29);
+  --color-accent2: rgb(40, 40, 40);
   --font-color: #ffffffc9;
 }
 
@@ -37,8 +39,6 @@ body {
   width: 90%;
   max-width: 48rem;
   background-color: var(--color-secondary);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   padding-top: 0.5rem;
 }
 
@@ -76,10 +76,8 @@ header {
   padding: 0.35rem 0.35rem 0.3rem;
   width: 3.3rem;
   margin-right: 1rem;
-  border-radius: 0.4rem;
+  border-radius: 0.6rem;
   font-size: 0.75rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   background-color: var(--color-accent);
   justify-content: center;
 }
@@ -114,7 +112,7 @@ header {
   left: 1px;
   right: -4px;
   bottom: 0;
-  background-color: var(--color-accent);
+  background-color: var(--color-accent) !important;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -176,27 +174,6 @@ main {
   margin-top: 2rem;
 }
 
-.button {
-  width: 85%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.4rem;
-  margin: 0.5rem 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  cursor: pointer;
-  background-color: var(--color-accent);
-  height: 2.7rem;
-  text-decoration: none;
-  color: var(--font-color);
-  text-transform: uppercase;
-  font-size: 0.65rem;
-  letter-spacing: 0.04rem;
-  font-weight: 500;
-  position: relative;
-}
-
 .menu {
   font-size: 0.7rem;
 }
@@ -217,8 +194,39 @@ main {
   }
 }
 
+.btn-container {
+  width: 100%;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.btn-container:nth-child(1) {
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--color-accent);
+  height: 2.7rem;
+  text-decoration: none;
+  color: var(--font-color);
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  letter-spacing: 0.04rem;
+  font-weight: 500;
+  position: relative;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: var(--color-accent2);
+}
+
 .button:active {
-  background-color: #303030;
+  background-color: var(--color-accent2);
 }
 
 .button > figure {
@@ -226,7 +234,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid var(--color-secondary);
 }
 
 .button > span {
@@ -236,11 +243,22 @@ main {
   padding: 0 0.9rem;
 }
 
+.btn-container:nth-child(2) .button:nth-child(1),
+.btn-container:nth-child(2) .button:nth-child(2) {
+  border-bottom: 0.5px solid var(--color-accent2);
+}
+
+.btn-container:nth-child(4) .button:nth-child(1),
+.btn-container:nth-child(4) .button:nth-child(2),
+.btn-container:nth-child(4) .button:nth-child(3) {
+  border-bottom: 1px solid var(--color-accent2);
+}
+
 .separate {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
 }
 .separate > div > img {
   width: 2rem;
@@ -250,7 +268,7 @@ main {
 .separate > div::before {
   display: inline-block;
   content: '';
-  border-top: 0.05rem solid var(--color-accent);
+  border-top: 0.05rem solid var(--color-accent2);
   width: 5rem;
   transform: translateY(-0.5rem);
 }
@@ -260,8 +278,24 @@ footer {
   margin-top: 1rem;
   background-color: var(--color-accent);
   font-size: 0.8rem;
-  font-weight: 400;
-  border-radius: 0 0 0.4rem 0.4rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+footer a::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(8px);
 }
 
 footer > a {
@@ -271,4 +305,8 @@ footer > a {
   display: block;
   cursor: pointer;
   padding: 1rem;
+}
+
+footer:hover {
+  background: var(--color-accent2);
 }
