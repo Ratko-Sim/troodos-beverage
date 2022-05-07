@@ -7,10 +7,10 @@
 }
 
 .theme-light {
-  --color-primary: rgb(221, 221, 221);
+  --color-primary: rgb(230, 230, 230);
   --color-secondary: rgb(240, 240, 240);
   --color-accent: rgb(255, 255, 255);
-  --color-accent2: rgb(221, 221, 221);
+  --color-accent2: rgb(230, 230, 230);
   --font-color: #070707d2;
 }
 
