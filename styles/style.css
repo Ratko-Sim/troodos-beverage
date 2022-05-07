@@ -7,10 +7,10 @@
 }
 
 .theme-light {
-  --color-primary: rgb(240, 240, 240);
+  --color-primary: rgb(221, 221, 221);
   --color-secondary: rgb(240, 240, 240);
   --color-accent: rgb(255, 255, 255);
-  --color-accent2: rgb(245, 245, 245);
+  --color-accent2: rgb(221, 221, 221);
   --font-color: #070707d2;
 }
 
@@ -38,7 +38,7 @@ body {
   border-radius: 0.4rem;
   width: 90%;
   max-width: 48rem;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   padding-top: 0.5rem;
 }
 
