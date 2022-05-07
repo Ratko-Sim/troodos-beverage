@@ -56,19 +56,19 @@ function setTheme(themeName) {
 }
 
 function toggleTheme() {
-  if (localStorage.getItem('theme') === 'theme-light') {
-    setTheme('theme-dark');
-  } else {
+  if (localStorage.getItem('theme') === 'theme-dark') {
     setTheme('theme-light');
+  } else {
+    setTheme('theme-dark');
   }
 }
 
 (function () {
-  if (localStorage.getItem('theme') === 'theme-light') {
-    setTheme('theme-light');
+  if (localStorage.getItem('theme') === 'theme-dark') {
+    setTheme('theme-dark');
     document.getElementById('slider').checked = true;
   } else {
-    setTheme('theme-dark');
+    setTheme('theme-light');
     document.getElementById('slider').checked = false;
   }
 })();
